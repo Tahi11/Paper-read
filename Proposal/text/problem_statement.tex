@@ -1,0 +1,94 @@
+\section{Problem Statement}
+Conventionally, software requirement elicitation and analysis are only limited to meetings,
+interviews, and documented data etc. All the tasks are performed manually, requiring more
+effort and time. With recent data trends from various sources, the user satisfaction and opinion
+are more integrated into the industry. Recent studies mentioned in literature section have shown that the user analytics tools
+and techniques are helping developers and practitioners to deal with a large number of user
+feedback by filtering, classifying, and summarizing them, to decide what requirements and
+features they should add, change or eliminate. Different ML algorithms have been used for
+making it automated with different settings and parameters.\\
+
+	 Most of the studies are using the app stores or Twitter data. A recent study has shown that the data from Twitter and app
+stores reviews can complement each other \cite{Nayebi}.This study analyzed  97.1 \% cases mining tweets provided complementary information to developers about user 
+feature request and bug report. Among all the apps 198 feature requests (22.48\%) and bug reports 246(12.98\%) were not reported in app store review. 
+40.78 \% feature requests and bug reports across tweets and app reviews were common. These results showed that complementary data source 
+gave better decision support. The use of
+similar user discussion online platforms can give more knowledge to help achieve better results. 
+This domain is not completly explored yet, and improvements can be done by using different
+algorithms and techniques. \\
+
+Also, the impact of these studies results in a real project is missing and
+not discussed clearly. It is not researched and discussed in the literature that how these studies and techniques are helping and useful in the industry. For Example, if a developer is using application for getting user requirements from social media. How many user requirements were suggested by the proposed system and how many requirements were actually implemented and devolped. These results will explain is it useful or not to mine social media for gathering user requirements. In short, two primary goals or contributions can be seen as:\\
+\begin{itemize}
+  \item First is researching the hybrid data sources e.g. tweets, appstores, linkedin etc for user requirements for buidling a new app or for the next version of the exisiting app.
+  \item Second is identifying the real impact and usefullness of mining social media results in the industry.
+\end{itemize}
+
+The related research questions are:\\
+
+\textbf{RQ1: Can advanced classifiers or advances settings perform better than the ones used in the existing
+literature?}\\
+Out of various classifiers, it has been found in the literature that SVM and NB perform well for
+short texts. Since the user reviews about software systems are short texts, these two algorithms
+are usually preferred. However, it could be researched that how advanced classifiers or settings perform
+in comparison to SVM and NB. The comparison could be drawn on the basis of the ability of a
+classifier to process larger datasets, the processing time, complexity analysis and accuracy of
+classification.\\
+
+\textbf{RQ2: What would be the impact of using semi-supervised in
+contrast to supervised learning?}\\
+One of the problems with the classifiers usually used SVM and NB is that they fall into the
+category of supervised learning. Supervised learning classifiers require a lot of human input as
+they work on the basis of provided training data. The training data needs to be classified by
+humans which is time consuming, particularly for large datasets such as the ones we are
+discussing. In such scenarios, semi-supervised and unsupervised learning would require
+less human input. Such techniques might decrease the efficiency, but for larger datasets, semi-supervised
+might be less time consuming than supervised learning
+techniques.\\
+
+\textbf{RQ:3 How social network sites (Twitter, Facebook and LinkedIn etc.) and online discussion
+forums (app stores and Amazon) reviews complement each other for developing the new
+app or software?}\\
+The importance of the end user involvement in today’s software is highlighted
+in the literature. However, the reusability of this large dataset is not discussed and missing. The
+addition of the social media data in the software development process in early stages can add
+global and heterogeneous perspectives. As different people from diverse cultures all around the world are sharing reviews about app or software on social media. The benefit of the large dataset is to gather information
+about the specific category and see what requirements users wished to have in both functional and
+nonfunctional perspective. A developer or practitioner without enough requirements for the project
+ can take benefit of the existing data knowledge for
+ specific app and domain. It will give an additional set of requirements and features and
+domain-specific knowledge for building the better system. I want to Implement this idea to a case
+study to know the impact and enhancement of requirement that can be gained by this additional
+data.
+
+	Also, some similar features mapping can be exciting. For example, in \cite{Martens:2017} performed an initial study to observe the impact of emotional sentiment on app reviews as an informative feature and its pitfall. After deciding and experimentation on hybrid sources, some other informative features from one source to another can be improvized.\\
+
+\textbf{RQ4: How useful are the social network sites (Twitter, Facebook, LinkedIn) and online
+discussion forums (app stores, Amazon, google stores) reviews for requirement elicitation
+and what works better?}\\
+Users discuss software systems on numerous platforms including social media websites,
+app stores, and online discussion forums etc. However, all the discussions do not contain
+information specific to requirement engineering. Any information that doesn’t fall into the
+category of features requests or bug reports generally is not of interest to us. Therefore, it is
+necessary to evaluate the percentage of relevant information in each of these platforms. A
+comparative study could be useful to evaluate which of these platforms contain more useful
+information as compared to rest of the platforms. Also, the hybrid models containing different
+sources e.g. twitter and Amazon reviews, Twitter, and app stores. What combination works better
+and provide more features or bug report.\\
+
+	The datasets obtained from online platforms are huge. The content shared by the users in al large number. However, the information would be more or less relevant to similar
+functionalities of the application. Going through all the extracted dataset that is classified as
+feature report or bug report would be humanly impossible. It is therefore imperative to
+summarize the obtained information. The summarization should not only group similar requests
+or bug reports, but also emphasize on the most discussed issues. For example, if there is a bug
+with a camera filter, and is discussed various times, it should be emphasized in the same manner
+to the developer, indicating that it requires more or immediate attention.\\
+
+	In this area after classification and all experiments no study has shown what was the impact 
+of their finding and how useful it was for devolper or practioneers. I want to perform some study with help of  casestudy that can help to identifying the impact
+ of these finding in industry. The other missing feature in the literature is adaptability of the tool in the industry. For making
+this concept more practical and useful in real life there should be some tool or plugin with
+the entire features. I have to research the existing tool and their use in the industry for more
+clarity. The ongoing survey disclosed the fact that tool is not available or if available only
+taking data from one source. For this gap, we can develop the plugin. That plugin can be added
+to the existing RE tools used in the industry.

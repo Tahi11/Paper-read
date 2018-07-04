@@ -1,0 +1,121 @@
+\section{Literature Review}
+This section describes the current trends in RE and ML. It will define a few problems that have
+been solved or automated using ML. Currently, I am working on a survey paper of RE and ML.
+This literature includes only the related paper to the problem statement, which I have proposed in this
+document. The full literature review is under progress.
+\subsection{Requirement classification}
+As per our on-going survey findings that we are writing, the most highlighted problem in RE
+recently is requirement analysis. It deals with the classification of functional and non-functional
+requirements. Requirements documents are usually written in natural language and
+contain hundreds of requirements. It is hard and time-consuming to classify them manually.
+These classifications are not limited to only FR and NFR, but also to the subcategories of NFR
+and quality attributes. This problem area can be categorized on the basis of existing datasets in
+the literature. In our categorization, we identify the following three classes of datasets:
+\begin{itemize}
+\item{App Stores}
+\item{Social Media}
+\item{Internal Application or Software}
+\end{itemize}
+\subsection{App Stores}
+Millions of users share their reviews on app stores after downloading and using apps. They not only rate the apps but also write about the liked and disliked features. It is not easy to
+find the requirements out of such a complex data. New features identification, classification of
+FR and NFR, and summaries of the reviews for the improvements of an app is often done with ML
+\cite{deocadez2017} \cite{lu2017automatic} \cite{maalej2015bug} \cite{jiang2014}. \\
+
+	For the automated classification of FR and NFR, \cite{deocadez2017}  used a total of 932,338 online
+reviews of the 40 top paid and free apps on appstores from top 10 different categories. Semi-supervised algorithm self- training, RASCO, Rel-RASCO for self-labeling is being used. This
+semi supervision technique overcomes the manual annotation problem and shows that only
+small amount of labeled data can achieve high accuracy. Naïve Bayes classification performs better than kNN, C4.5, and SMO.\\
+
+	Another study on the classification of FR
+and NFR was performed in \cite{lu2017automatic} on 6,696 raw user reviews from
+iBook and 4400 raw user reviews from WhatsApp. It uses concept of
+augmentation of user reviews and effectively improves user reviews classification results by
+adding textual semantics to the sentences. The user reviews are augmented by several similar
+words for better classification of results. The bagging algorithm outperformed Naïve Bayes and J.48.\\
+
+	A classification method is produced in \cite{maalej2015bug} for identifying
+bug reports and feature requests from user reviews. Total 146,057 reviews for 40 apps were
+collected from Appstore and Google Play Store. For further experimentation, 4,400 reviews
+are selected. The proposed model shows the upwards of 70 percent precision and 80 percent
+recall could be obtained using multiple binary classifiers, as an alternative to a single multiclass
+classifier. For the classification, binary Naive Bayes algorithm is used. The results show that
+the commonly used NLP techniques such as stop word removal and lemmatization could
+negatively affect the performance of this classification task.\\
+
+	In the paper \cite{jiang2014}, the primary goal is to transform online reviews into evolutionary requirements.
+Karplersky internet security 2011 from Amazon and mobile app of Tune-In Radio Pro V3.6
+from the appstore are taken as dataset. The characteristic analysis of the reviews is
+considered for the automated task analysis and software relation-based propagation approach
+(SRPA) technique is used for the identification of opinion about common software features. Each set
+manually labeled the potential software feature, opinion and the polarities in the reviews, and
+then classify the reviews on the basis of relevant opinion semantics. For clustering, the opinion
+expression network algorithm Grivan Newman (GN) is used in the proposed methods S-GN. The GN algorithm produces optimized number of clusters. For the second problem, the system helped the developer and proposed a set of related evolutionary requirements for the system.This problem in this study makes it more interesting by suggesting the relevant and essential
+user requirements to a developer by adding polarization factor. That is not used
+commonly in this domain.\\
+
+\subsection{Social Media}
+Social media e.g. Twitter and Facebook have become popular platforms to gather the
+requirements from user posts. Users are sharing their new features requests, feedback and bug
+report on social platforms. Previous studies \cite{Singer:2014} \cite{Prasetyo} \cite{Achananuparp:2012} in software engineering have applied different techniques to analyzed tweets contents related to software development. These tweets were posted by developers describing the relevant and irrelevant programming languages, libraries system methodologies tweets for software development. Our study is focused on getting user feedback for software application and mobile applications for obtaining user requirements. ML has been used to classify tweets into meaningful
+categories like new requests and bugs etc. \cite{guzman2017} \cite{williams2017} . These classifications and the information
+from these tweets helped the industry to know the user feedback for software improvements.\\
+
+	ALERTme \cite{guzman2017} approach proposes for classifying, grouping and ranking tweets in software
+evolution process. For this, a total of 68,108 tweets i.e., collection of two months of tweets about
+Spotify, Dropbox, and Slack software dataset are used. The output is binary classification i.e.
+improvement request or other. For the automated classification, supervised learning algorithm Multinomial Naïve Bayes is used.  
+Further improvement requests are considered for the
+grouping which helped to sort the request and summarize them accordingly. The major contribution helped to reduce human
+effort to analyze each tweet for eliciting the requirements and knowing the issues of software. As the last step, these summaries and tweets are ranked by high
+worthy tweets. A drawback of this study is the high number of manual annotations for labeling
+the data as request or others. Besides, the majority voting scheme is being used to solve the
+disagreements. Three annotators did this process, and it took around 13.5 hours for each
+annotator to complete the task.\\
+
+	The next study \cite{williams2017} classify and summarize the tweets. A total of 
+4,000 tweets are randomly selected for ten different software. The proposed model
+classifies them into bug, requirement, and spam using Naïve Bayes and SVM. The results
+showed that 50\% of data contained useful technical feedback and achieved an average
+classification F1 of 72\% using SVM that is better than state of the art in the literature  \cite{guzman2017}. The
+reason is the feedback dedicated to technical stakeholders i.e. developer related tweets are
+focused and analyzed. Tweets dataset is labeled manually. Different techniques with VSM and
+NB are used. VSM is used for preprocessing e.g. stop word removing, sentimental analysis, stemming,
+and Bag of words. However, the results show that these parameters do not
+improve to help the results of ML algorithm for classification of the tweets. Unlike the political
+tweets which are polarized and carry emotions, software tweets are neutral in nature.\\
+
+\subsection{Internal Application or Software}
+The third category is dealing with requirement classification using the software product data
+i.e. written in Software Requirements Specification (SRS). It could be dataset for some interanl used software system. This data is composed of different software functional and nonfunctional
+requirements.  The nonfunctional requirements have subcategories that include availability,
+fault tolerance, legal, look and feel, maintainability, operational, performance, portability,
+scalability, security and usability etc. This dataset is provided by the Requirement Engineering
+(RE) conference and named as Quality attributes (NFR) dataset. The size of the total data set
+has 625 requirements with 225 FR and rest with NFRs subcategories. \\
+
+	For the automated classification of FR and NFR and identification of the subcategories of NFR \cite{kurtanovic2017}, support
+vector machine (SVM) algorithm is used. The data is not equally distributed because of the small
+number of requirements in NFRs subcategories, which are ignored. Data
+under-sampling problem is solved by using external data i.e. user comment
+dataset from the Amazon, and a hybrid approach is proposed with the new dataset. This
+dataset contains performance and usability requirements. For the identification of specific
+NFRs, proposed methodology achieve the highest precision and recall for security and
+performance NFRs with ~92\% precision and ~90\% recall. \\
+
+	Two main goals are targeted \cite{Abad},
+first is classifying the FRs and NFRs, and second is an identification of NFR category. The data is
+pre-processed as a first step. Feature co-occurrence and regular expression are used to increase
+the weight of influential words used in NFR. The supervised learning algorithm J.48 DT is used
+for classifying FRs and NFRs. For achieving the categorization or classification of NFR,
+topic modeling using unsupervised algorithm LDA and BTM is applied. For the topic generation, the results show  that BNB works better than clustering, k-means, LDA, BTM. \\
+
+
+	Another study for solving the same problem with NFR dataset with additional security dataset is conducted \cite{Dekhtyar}.
+Software requirements are classified with the focus on security related requirements. ML algorithm
+CNN with a specific setting in Tensor-Flow helped to achieve the goal and better results. In all
+these classification problems, human input is involved for the annotation of the requirements.
+Semi-supervision requires less human effort in labeling requirements than fully supervised
+methods. The semi-supervised approach \cite{Casamayor} using Naïve Bayes resulted in accuracy rates
+above 70\%, considerably higher than the results obtained with supervised methods using
+standard collections of documents.

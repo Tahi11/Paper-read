@@ -1,0 +1,82 @@
+\documentclass[11pt]{llncs}
+
+\usepackage{calc, amssymb, amstext, amsmath}
+\usepackage{boxedminipage, xspace, here, float}
+\usepackage{epsfig, graphics, graphicx, xcolor, color, setspace, tabularx, multirow}
+\usepackage[linewidth=1pt]{mdframed}
+\usepackage{chngcntr} 
+\usepackage[font={small}]{caption, subfig}
+\usepackage{balance}
+
+\usepackage{hyperref, url}
+\usepackage{arydshln}
+\usepackage{csquotes}
+
+
+\pdfcompresslevel=9
+%\DeclareGraphicsExtensions{.png} 
+\graphicspath{{img/}{svg/}} 
+
+ 
+ 
+\usepackage{ifthen} 
+\newboolean{showcomments} 
+\setboolean{showcomments}{true} % toggle to show or hide comments
+\ifthenelse{\boolean{showcomments}} 
+  {\newcommand{\nb}[2]{
+    \fcolorbox{gray}{yellow}{\bfseries\sffamily\scriptsize#1}  
+    {$\blacktriangleright$#2$\blacktriangleleft$} 
+   }
+   \newcommand{\version}{\emph{\scriptsize$-$working$-$}}
+  } 
+  {\newcommand{\nb}[2]{} 
+   \newcommand{\version}{}  
+  }    
+% for comments 
+\newcommand\levi[1]{\nb{Levi}{\textcolor{teal}{#1}}}
+\newcommand\tahira[1]{\nb{Tahira}{\textcolor{blue}{#1}}}
+
+\newcommand{\etal}{\emph{et al.}\xspace}
+\newcommand{\RE}{\textsc{Re}\xspace}
+\newcommand{\ML}{\textsc{Ml}\xspace}
+
+
+%\setlength{\textwidth}{13cm}
+%\setlength{\textheight}{19cm}
+% \setlength{\oddsidemargin}{1.1cm}  
+% \setlength{\evensidemargin}{1.1cm}
+
+%\newcommand{\newpar}[1]{\noindent
+%\textbf{#1.}\hspace{0.3cm}
+%}
+
+\usepackage{inputenc} 
+\inputencoding{utf8}
+
+\begin{document} 
+\frontmatter          % for the preliminaries
+\mainmatter              % start of the contributions
+\title{ \Huge \textbf{Extracting User Requirements from Social Media Using Machine Learning} }
+\author{Tahira Iqbal}
+\institute{
+fortiss — An-Institut Technical University Munich, Germany \\
+\email{iqbal@fortiss.org} 
+}
+\pagenumbering{gobble}
+\maketitle
+\newpage
+\pagenumbering{arabic}
+
+  
+\input{text/introduction} 
+\input{text/literture_review}
+\input{text/problem_statement}
+\input{text/Proposed_Methodology}
+\input{text/SupportInFortiss}
+
+
+ 
+\bibliographystyle{unsrt} 
+\bibliography{./ml_req} 
+
+\end{document}
