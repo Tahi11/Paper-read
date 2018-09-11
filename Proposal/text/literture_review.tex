@@ -1,11 +1,10 @@
 \section{Literature Review}
 This section describes the current trends in RE and ML. It will define a few problems that have
-been solved or automated using ML. Currently, I am working on a survey paper of RE and ML.
-This literature includes only related papers to the problem statement, which I have proposed in this
-document. The full literature review is under progress.
+been solved or automated using ML. This literature includes only related papers to the problem statement, which I have proposed in this
+document. The detailed verion can be seen in the accepted survey paper that is attached in the appendix. 
 \subsection{Requirement classification}
-As per our on-going survey findings that we are writing, the most highlighted problem in RE
-recently is requirement analysis. It deals with the classification of functional and non-functional
+As per our survey \cite{tahira} findings, the most highlighted problem in RE
+is requirement analysis. It deals with the classification of functional and non-functional
 requirements. Requirements documents are usually written in natural language and
 contain hundreds of requirements. It is hard and time-consuming to classify them manually.
 These classifications are not limited to only FR and NFR, but also to the subcategories of NFR
@@ -117,5 +116,22 @@ these classification problems, human input is involved for the annotation of the
 Semi-supervision requires less human effort in labeling requirements than fully supervised
 methods. The semi-supervised approach \cite{Casamayor} using Naïve Bayes resulted in accuracy rates
 above 70\%, considerably higher than the results obtained with supervised methods using
-standard collections of documents.
+standard collections of documents.\\
+
+	 Most of the studies are using the app stores or Twitter data seprately for finding user requirements as shown in the table. A recent study has shown that the data from Twitter and app
+stores reviews can complement each other \cite{Nayebi}.This study analyzed  97.1 \% cases mining tweets provided complementary information to developers about user 
+feature request and bug report. Among all the apps 198 feature requests (22.48\%) and bug reports 246(12.98\%) were not reported in app store review. 
+40.78 \% feature requests and bug reports across tweets and app reviews were common. These results showed that complementary data sources 
+provide better decision support. The gap in these studies are not taking advantage of other
+similar user discussion online platforms e.g. facebook, instagram etc, that can give more knowledge to help achieve better results. 
+This concept is not completly explored yet, and improvements can be done by using different
+algorithms and techniques. Also, it is not proven which combination will work better and what algorithms will be suitable for the hzbrid data sources. \\
+
+Also, the impact of these studies results in a real project is missing and
+not discussed clearly. It is not researched and discussed in the literature that how these studies and techniques are helping and useful in the industry. For example, if a developer is using application for getting user requirements from social media. How many user requirements were suggested by these proposed system and how many requirements were actually implemented and devolped. These results will explain is it useful or not to mine social media for gathering user requirements. In short, two primary goals or contributions can be seen to fulfill the research gap discussed above:\\
+\begin{itemize}
+  \item First is researching the hybrid data sources e.g. tweets, appstores, linkedin etc for user requirements for building a new app or for the next version of the exisiting app.
+  \item Second is identifying the real impact and usefullness of mining social media results in the industry.
+\end{itemize}
 \input{text/table}
+\newpage
