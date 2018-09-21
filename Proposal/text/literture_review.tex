@@ -49,14 +49,14 @@ considered for the automated task analysis and software relation-based propagati
 (SRPA) technique is used for the identification of opinion about common software features. Each set
 manually labeled the potential software feature, opinion and the polarities in the reviews, and
 then classify the reviews on the basis of relevant opinion semantics. For clustering, the opinion
-expression network algorithm Grivan Newman (GN) is used in the proposed methods S-GN. The GN algorithm produces optimized number of clusters. For the second problem, the system helped the developer and proposed a set of related evolutionary requirements for the system. This problem in this study makes it more interesting by suggesting the relevant and essential user requirements to a developer by adding polarization factor. That is not used
+expression network algorithm Grivan Newman (GN) is used in the proposed methods S-GN. The GN algorithm produces optimized number of clusters. For the second problem, the system helped the developer and proposed a set of related evolutionary requirements for the system. This problem makes the study more interesting by suggesting the relevant and essential user requirements to a developer by adding polarization factor. That is not used
 commonly in this domain.\\
 
 \subsubsection{Social Media: }
 Social media e.g. Twitter and Facebook have become popular platforms to gather the
 requirements from user posts. Users are sharing their new features requests, feedback and bug
-report on social platforms. Previous studies \cite{Singer:2014} \cite{Prasetyo} \cite{Achananuparp:2012} in software engineering have applied different techniques to analyzed tweets contents related to software development. These tweets were posted by developers describing the relevant and irrelevant programming languages, libraries system methodologies tweets for software development. Our study is focused on getting user feedback for software and mobile applications for obtaining user requirements. ML has been used to classify tweets into meaningful
-categories like new requests and bugs etc. \cite{guzman2017} \cite{williams2017} . These classifications and the information
+report on social platforms. Previous studies \cite{Singer:2014} \cite{Prasetyo} \cite{Achananuparp:2012} in software engineering have applied different techniques to analyze tweets contents related to software development. These tweets were posted by developers describing the relevant and irrelevant programming languages, libraries system methodologies tweets for software development. The study is focused on getting user feedback for software and mobile applications for obtaining user requirements. ML has been used to classify tweets into meaningful
+categories like new requests and bugs etc. \cite{guzman2017} \cite{williams2017}. These classifications and the information
 from these tweets helped the industry to know the user feedback for software improvements.\\
 
 	ALERTme \cite{guzman2017} approach proposes for classifying, grouping and ranking tweets in software
@@ -66,9 +66,8 @@ improvement request or other. For the automated classification, supervised learn
 Further improvement requests are considered for the
 grouping which helped to sort the request and summarize them accordingly. The major contribution helped to reduce human
 effort to analyze each tweet for eliciting the requirements and knowing the issues of software. As the last step, these summaries and tweets are ranked by high
-worthy tweets. A drawback of this study is the high number of manual annotations for labeling
-the data as request or others. Besides, the majority voting scheme is being used to solve the
-disagreements. Three annotators did this process, and it took around 13.5 hours for each
+worthy tweets. A drawback of this study is high number of manual annotations for labeling data as request or others. Besides, the majority voting scheme is being used to solve the
+disagreements. Three annotators completed this process, and it took around 13.5 hours for each
 annotator to complete the task.\\
 
 	The next study \cite{williams2017} classify and summarize the tweets. A total of 
@@ -85,7 +84,7 @@ tweets which are polarized and carry emotions, software tweets are neutral in na
 
 \subsubsection{Internal Application or Software: }
 The third category is dealing with requirement classification using the software product data
-i.e. written in Software Requirements Specification (SRS). It could be dataset for some interanl used software system. This data is composed of different software functional and nonfunctional
+i.e. written in Software Requirements Specification (SRS). It could be dataset for some internal used software system. This data is composed of different software functional and nonfunctional
 requirements.  The nonfunctional requirements have subcategories that include availability,
 fault tolerance, legal, look and feel, maintainability, operational, performance, portability,
 scalability, security and usability etc. This dataset is provided by the Requirement Engineering
@@ -118,20 +117,21 @@ methods. The semi-supervised approach \cite{Casamayor} using Naïve Bayes result
 above 70\%, considerably higher than the results obtained with supervised methods using
 standard collections of documents.\\
 
-	 Most of the studies are using the app stores or Twitter data seprately for finding user requirements as shown in the table. A recent study has shown that the data from Twitter and app
-stores reviews can complement each other \cite{Nayebi}.This study analyzed  97.1 \% cases mining tweets provided complementary information to developers about user 
-feature request and bug report. Among all the apps 198 feature requests (22.48\%) and bug reports 246(12.98\%) were not reported in app store review. 
+	 Most of the discussed studies are using app stores or Twitter data seprately for finding user requirements as shown in the table \ref{table:LiteratureReview}. A recent study has shown that the data from Twitter and app
+stores reviews can complement each other \cite{Nayebi}.This study analyzed  97.1 \% cases mining tweets provides complementary information to developers about user 
+feature request and bug report. Among all the apps 198 feature requests (22.48\%) and bug reports 246 (12.98\%) were not reported in app store review. 
 40.78 \% feature requests and bug reports across tweets and app reviews were common. These results showed that complementary data sources 
 provide better decision support. The gap in these studies are not taking advantage of other
-similar user discussion online platforms e.g. facebook, instagram etc, that can give more knowledge to help achieve better results. 
-This concept is not completly explored yet, and improvements can be done by using different
-algorithms and techniques. Also, it is not proven which combination will work better and what algorithms will be suitable for the hzbrid data sources. \\
+similar user discussion online platforms e.g. Facebook, instagram etc, that can give more knowledge to help achieve better results. 
+This concept is not completely explored yet, and improvements can be done by using different
+algorithms and techniques. The gap of this study can be seen as the other combination of datasets. The question which combination will work better and what algorithms will be suitable for the hybrid data sources needs to be answered and explored. \\
 
 Also, the impact of these studies results in a real project is missing and
-not discussed clearly. It is not researched and discussed in the literature that how these studies and techniques are helping and useful in the industry. For example, if a developer is using application for getting user requirements from social media. How many user requirements were suggested by these proposed system and how many requirements were actually implemented and devolped. These results will explain is it useful or not to mine social media for gathering user requirements. In short, two primary goals or contributions can be seen to fulfill the research gap discussed above:\\
+not discussed clearly. It is not researched and discussed in the literature that how these studies and techniques are helping and useful in the industry. For example, if a developer is using application for getting user requirements from social media. How many user requirements were suggested by these proposed system and how many requirements were actually implemented and developed. These results will explain if it useful or not to mine social media for gathering user requirements. In short, three primary goals or contributions can be seen to fulfill the research gap discussed above:\\
 \begin{itemize}
-  \item First is researching the hybrid data sources e.g. tweets, appstores, linkedin etc for user requirements for building a new app or for the next version of the exisiting app.
+  \item First is researching the hybrid data sources e.g. tweets, appstores, linkedin, instagram etc for user requirements for building a new app or for the next version of the exisiting app.
   \item Second is identifying the real impact and usefullness of mining social media results in the industry.
+  \item Third is reducing manual annotaion processing by using semi supervised algorithm with less annotated data.
 \end{itemize}
 \input{text/table}
 \newpage

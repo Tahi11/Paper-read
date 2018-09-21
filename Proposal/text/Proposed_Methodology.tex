@@ -22,16 +22,16 @@ performed are shown in Figure 1.
 \caption{Block diagram of proposed methodology.}
 \end{figure}
 
-\textbf{Step 1 - Data Preprocessing: } The input data will be prepared for classification after preprocessing. This step will probably include tokenization, removal of stop words, stemming, etc. This step majorly depends on the chosen dataset combination, as different social media platforms have their limitations accordingly.\\
+\textbf{Step 1 - Data Preprocessing: } The input data will be prepared for classification after preprocessing. This step will probably include tokenization, removal of stop words, stemming, etc. This step majorly depends on the chosen dataset combination, as different social media platforms have their own limitations.\\
 
-\textbf{Step 2 –  Filter useful information: } This step will gather and filter the selected App or category description data. Each application has a description on app stores and on their Twitter or Facebook page. This description will be helpful to determine the main feature of an application as relevant information. Also, some behavior feature will be learned.  For example how much is the company responsive and replies to the customer.This description data will be filtered upon the user selection. It can also be used in next step as metadata.\\
+\textbf{Step 2 –  Filter useful information: } This step will gather and filter the selected App or category description data. Each application has a description on app stores and on their Twitter or Facebook page. This description will be helpful to determine the main feature of an application as relevant information. Also, some behavior feature will be learned.  For example how much is the company responsive and replies to the customer. This description data will be filtered upon the user selection. It can also be used in next step as metadata.\\
 
 \textbf{Step 3 –  Classification: } Not all user discussions will be useful for feature requests or bug reports extraction. Therefore, it is necessary to filter out useful information from the other. The semi-supervised algorithm will learn a classifier. That will classify the data into a feature request, bug reports, and other categories.\\
 
 \textbf{Step 4 – Summarization: } Multiple discussions could be related to the same feature or bug.
 Since the datasets extracted from the sources is so massive, going through the complete datasets
 would be humanly impossible. The information needs to be summarized so that the similar type
-of information can be seen together. In this ranking process will consider features from the different sources such as likes, share, user behavior, sentiment analysis etc. As our dataset will be multi sourced, different features and their impact will be researched on each dataset for future selection.As the last step, all information will be clustered using topic modeling algorithm. This will
+of information can be seen together. In this ranking process will consider features from the different sources such as likes, share, user behavior, sentiment analysis etc. As our dataset will be multi sourced, different features and their impact will be researched on each dataset for future selection. As the last step, all information will be clustered using topic modeling algorithm. This will
 give developers and practitioner an idea of which feature requests or bug reports are more emphasized and frequently discussed as compared to the rest.\\
 
 	The main aim of the proposed methodology is to assist developers who want to develop a new
